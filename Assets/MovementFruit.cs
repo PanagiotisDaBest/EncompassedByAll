@@ -8,7 +8,7 @@ public class MovementFruit : MonoBehaviour
     public float minimumXspeed;
     public float maximumXspeed;
     public float minimumYspeed;
-    public float maximumXspeed;
+    public float maximumYspeed;
 
     [Header("Fruit Life")]
     public float lifetime;
