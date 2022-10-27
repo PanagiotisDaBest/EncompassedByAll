@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     public float minimumX;
     public float maximumX;
     public float y;
+    public float z;
 
     [Header("Visuals")]
     public Sprite[] sprites;
@@ -29,10 +30,7 @@ public class Spawner : MonoBehaviour
         //Instantiate and position for the object
     {
         GameObject instance = Instantiate (prefab);
-        instance.transform.position = new Vector2(
-         Random.Range(minimumX,maximumX),
-         y
-            );
+        instance.transform.position = new Vector3(Random.Range(minimumX,maximumX),y, z);
 
         // sett a random sprite (can be used for later as of right now we use one sprite)
         Sprite randomSprite = sprites[Random.Range(0, sprites.Length)];
