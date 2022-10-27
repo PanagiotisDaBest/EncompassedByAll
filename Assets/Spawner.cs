@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
         InvokeRepeating("Spawn", interval, interval);
     }
 
-    private void spawn()
+    private void Spawn()
         //Instantiate and position for the object
     {
         GameObject instance = Instantiate (prefab);
