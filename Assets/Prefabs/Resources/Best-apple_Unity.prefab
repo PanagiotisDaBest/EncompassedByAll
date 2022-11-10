@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4617961879083458194}
   - component: {fileID: 9203397923547428090}
   - component: {fileID: 1731164684406194963}
+  - component: {fileID: 4624034327956626920}
   m_Layer: 6
   m_Name: Best-apple_Unity
   m_TagString: Untagged
@@ -165,3 +166,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4624034327956626920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617961879083458197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473134f88e118d44896e0e067cffae98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
