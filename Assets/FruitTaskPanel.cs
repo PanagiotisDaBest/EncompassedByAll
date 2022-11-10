@@ -11,17 +11,24 @@ public class FruitTaskPanel : MonoBehaviour
 
     GameObject lastFirstSelectedGameObject;
 
+    [SerializeField]
+    GameObject Spawner;
+
 
     public void Show()
     {
         gameObject.SetActive(true);
         lastFirstSelectedGameObject = GameManager.Instance.EventSystem.firstSelectedGameObject;
         GameManager.Instance.EventSystem.firstSelectedGameObject = gameObject;
+
+        Spawner.SetActive(true);
     }
 
     public void Hide()
     {
         gameObject.SetActive(false);
         GameManager.Instance.EventSystem.firstSelectedGameObject = lastFirstSelectedGameObject;
+
+        Spawner.SetActive(false);
     }
 }
