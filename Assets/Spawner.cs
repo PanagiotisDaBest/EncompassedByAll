@@ -7,6 +7,9 @@ public class Spawner : MonoBehaviour
    [Header("Target")]
     public GameObject prefab;
 
+    [SerializeField]
+    private FruitTaskPanel panel;
+
 
     [Header("Gameplay")]
     public float interval;
@@ -31,6 +34,7 @@ public class Spawner : MonoBehaviour
     {
         GameObject instance = Instantiate (prefab);
         instance.transform.position = new Vector3(Random.Range(minimumX,maximumX),y, z);
+        instance.GetComponent<CuttableObjects>().cutPanel = panel;
 
         // sett a random sprite (can be used for later as of right now we use one sprite)
         Sprite randomSprite = sprites[Random.Range(0, sprites.Length)];

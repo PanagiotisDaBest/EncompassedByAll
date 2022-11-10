@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4617961879083458197, guid: c0db6e7ee42c2f842b4b5f341b54e840, type: 3}
+  panel: {fileID: 2430736039747689235}
   interval: 2
   minimumX: -2.5
   maximumX: 2.5
@@ -2150,6 +2151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ownerTask: {fileID: 1114848257}
   Spawner: {fileID: 373824225}
+  finalCount: 0
 --- !u!1001 &7467045678431576766
 PrefabInstance:
   m_ObjectHideFlags: 0

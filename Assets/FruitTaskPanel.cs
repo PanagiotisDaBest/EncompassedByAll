@@ -14,6 +14,8 @@ public class FruitTaskPanel : MonoBehaviour
     [SerializeField]
     GameObject Spawner;
 
+    public int finalCount;
+
 
     public void Show()
     {
@@ -31,4 +33,6 @@ public class FruitTaskPanel : MonoBehaviour
 
         Spawner.SetActive(false);
     }
+
+
 }
