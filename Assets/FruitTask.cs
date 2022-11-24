@@ -16,6 +16,5 @@ public class FruitTask : Task
     {
         gamePanel.Show();
 
-        
     }
 }

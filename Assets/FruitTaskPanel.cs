@@ -26,6 +26,14 @@ public class FruitTaskPanel : MonoBehaviour
         Spawner.SetActive(true);
     }
 
+    public void Update()
+    {
+        if (finalCount == 10)
+        {
+            Hide();
+            ownerTask.SetAsResolved();
+        }
+    }
     public void Hide()
     {
         gameObject.SetActive(false);

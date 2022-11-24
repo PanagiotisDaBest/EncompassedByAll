@@ -10,7 +10,6 @@ public class CuttableObjects : MonoBehaviour
     void OnCollisionEnter2D (Collision2D collision)
     // identifying if the object is getting cut
     {
-        Debug.Log("col");
         if(collision.gameObject.tag == "Cut")
         {
             cutPanel.finalCount++;
