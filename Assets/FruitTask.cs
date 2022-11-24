@@ -15,5 +15,7 @@ public class FruitTask : Task
     public override void OnInteract()
     {
         gamePanel.Show();
+
+        
     }
 }
