@@ -6,6 +6,8 @@ using TMPro;
 
 public class FruitTaskPanel : MonoBehaviour
 {
+    public GameObject DecativateFruitSpawner;
+
     [SerializeField]
     Task ownerTask;
 
@@ -13,6 +15,9 @@ public class FruitTaskPanel : MonoBehaviour
 
     [SerializeField]
     GameObject Spawner;
+
+    [SerializeField]
+    GameObject Sword;
 
     public int finalCount;
 
@@ -24,6 +29,8 @@ public class FruitTaskPanel : MonoBehaviour
         GameManager.Instance.EventSystem.firstSelectedGameObject = gameObject;
 
         Spawner.SetActive(true);
+
+        
     }
 
     public void Update()
@@ -32,7 +39,13 @@ public class FruitTaskPanel : MonoBehaviour
         {
             Hide();
             ownerTask.SetAsResolved();
+            Spawner.SetActive(false);
+            Sword.SetActive(false);
+
+
         }
+      
+
     }
     public void Hide()
     {
