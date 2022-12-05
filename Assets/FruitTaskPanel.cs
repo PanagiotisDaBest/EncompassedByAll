@@ -19,6 +19,9 @@ public class FruitTaskPanel : MonoBehaviour
     [SerializeField]
     GameObject Sword;
 
+    public GameObject Prefab;
+    
+
     public int finalCount;
 
 
@@ -37,12 +40,11 @@ public class FruitTaskPanel : MonoBehaviour
     {
         if (finalCount == 10)
         {
+
             Hide();
-            ownerTask.SetAsResolved();
-            Spawner.SetActive(false);
-            Sword.SetActive(false);
-
-
+            
+           
+            
         }
       
 
@@ -51,8 +53,11 @@ public class FruitTaskPanel : MonoBehaviour
     {
         gameObject.SetActive(false);
         GameManager.Instance.EventSystem.firstSelectedGameObject = lastFirstSelectedGameObject;
-
         Spawner.SetActive(false);
+        Sword.SetActive(false);
+        Prefab.SetActive(false);
+
+
     }
 
 

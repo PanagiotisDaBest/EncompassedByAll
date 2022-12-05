@@ -17,11 +17,11 @@ GameObject:
   - component: {fileID: 4624034327956626920}
   m_Layer: 6
   m_Name: Best-apple_Unity
-  m_TagString: Untagged
+  m_TagString: DisabledFruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3059284951560474940
 RectTransform:
   m_ObjectHideFlags: 0
@@ -178,3 +178,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473134f88e118d44896e0e067cffae98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutPanel: {fileID: 0}

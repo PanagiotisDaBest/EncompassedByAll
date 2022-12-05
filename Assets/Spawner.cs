@@ -36,9 +36,9 @@ public class Spawner : MonoBehaviour
         instance.transform.position = new Vector3(Random.Range(minimumX,maximumX),y, z);
         instance.GetComponent<CuttableObjects>().cutPanel = panel;
 
-        // sett a random sprite (can be used for later as of right now we use one sprite)
+        // set a random sprite (can be used for later as of right now we use one sprite)
         Sprite randomSprite = sprites[Random.Range(0, sprites.Length)];
-        instance.GetComponent<SpriteRenderer> ().sprite = randomSprite;
-        
+        instance.GetComponent<SpriteRenderer>().sprite = randomSprite;
+
     }
 }

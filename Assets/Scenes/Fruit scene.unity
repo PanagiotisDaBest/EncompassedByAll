@@ -223,13 +223,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75902082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.052871, y: 0.10666036, z: -0.07204656}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.761385, y: -5.693542, z: -0.07204656}
+  m_LocalScale: {x: 2.3379722, y: 2.7593815, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1114848256}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &145166271
 GameObject:
@@ -1501,6 +1501,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 373824227}
+  - {fileID: 75902084}
   - {fileID: 2430736039747689234}
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -2035,7 +2036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920498799848866162, guid: ca42dbc64893ee7479ea800467f2c6b6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4920498799848866162, guid: ca42dbc64893ee7479ea800467f2c6b6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2153,6 +2154,7 @@ MonoBehaviour:
   ownerTask: {fileID: 1114848257}
   Spawner: {fileID: 373824225}
   Sword: {fileID: 75902082}
+  Prefab: {fileID: 4617961879083458197, guid: c0db6e7ee42c2f842b4b5f341b54e840, type: 3}
   finalCount: 0
 --- !u!1001 &7467045678431576766
 PrefabInstance:
